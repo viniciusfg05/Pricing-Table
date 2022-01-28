@@ -124,15 +124,13 @@ header p {
   color: rgba(29, 83, 158, 1);
 }
 
-.classPlano.destaque.button {
+.popular {
   opacity: 0;
 }
 
-.classPlano.destaque.button.active {
-  opacity: 1;
-}
 
-.classPlano p {
+
+.popular.active {
   background-color: var(--blue);
   font-size: 0.75rem;
   margin-right: 1rem;
@@ -257,5 +255,11 @@ li {
 
   .container:nth-child(1) {
     margin-left: 1.5rem;
+  }
+}
+
+@media (min-height: 680px) {
+  .planos {
+    margin-top: -10rem;
   }
 }
