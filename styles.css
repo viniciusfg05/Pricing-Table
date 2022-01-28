@@ -124,13 +124,13 @@ header p {
   color: rgba(29, 83, 158, 1);
 }
 
-.popular {
+.popular.active {
   opacity: 0;
 }
 
 
 
-.popular.active {
+.popular {
   background-color: var(--blue);
   font-size: 0.75rem;
   margin-right: 1rem;
