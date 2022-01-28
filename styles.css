@@ -36,12 +36,12 @@ header h1 {
   color: var(--page-background);
   font-family: var(--font);
   font-weight: 700;
-  font-size: 3rem;
-  margin: 6.25rem auto 1.25rem auto;
+  font-size: 2rem;
+  margin: 4rem auto 0.2rem auto;
 }
 
 .text {
-  height: 50%;
+  /* height: 50%; */
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -78,16 +78,20 @@ header p {
   border-radius: 0.5rem; /*borda redonda*/
   z-index: 99;
   background-color: var(--page-background);
-
-  width: 22.18rem;
-  height: 29.37rem;
-
+  width: 16rem;
+  height: 24rem;
   display: flex;
   flex-direction: column;
+
+  transition: 0.5s;
+}
+
+.container:hover {
+  transform: scale(1.05);
 }
 
 .body.card {
-  padding: 0 1.87rem;
+  padding: 0 1rem;
 }
 
 /* Header dos card --------------------------------------------------------------------------------------- */
@@ -102,22 +106,20 @@ header p {
 }
 
 .classPlano h2 {
-  margin-left: 1.25rem;
+  margin-left: 1rem;
   font-family: var(--font);
   font-weight: 600;
-  font-size: 1.25rem;
-
+  font-size: 1.1rem;
   color: rgba(29, 83, 158, 1);
 }
 
 .classPlano p {
   background-color: var(--blue);
   font-size: 0.75rem;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
   font-family: var(--font);
   border-radius: 0.9rem; /*borda redonda*/
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-
+  padding: 0.3rem 1rem 0.3rem 1rem;
   color: var(--page-background);
   font-weight: 600;
 }
@@ -130,7 +132,7 @@ header p {
 }
 
 .valor span {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   align-items: center;
   margin-bottom: 0.3rem;
 }
@@ -147,7 +149,7 @@ header p {
 
 .valor.plano {
   display: flex;
-  font-size: 2.37rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: var(--font);
   align-items: flex-end;
@@ -158,30 +160,28 @@ header p {
 .info {
   font-weight: 400;
   font-family: var(--font);
-  font-size: 0.875rem;
-
+  font-size: 0.8rem;
   color: rgba(130, 135, 153, 1);
-
-  margin-bottom: 2.56rem;
+  /* margin-bottom: 1rem; */
+  margin-bottom: 0.8rem;
 }
 
 /*  Descriptios--------------------------------------------------------------------------------------- */
 
 li {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.8rem;
 }
 
 .description {
   font-weight: 600;
   font-family: var(--font);
-  font-size: 1rem;
-
+  font-size: 0.8rem;
   color: rgba(130, 135, 153, 1);
 }
 
 .icon-check {
   color: #59ce9f;
-  margin-right: 0.9rem;
+  margin-right: 0.5rem;
 }
 
 /*  BOTTON--------------------------------------------------------------------------------------- */
@@ -195,6 +195,11 @@ li {
   margin-bottom: 2.5rem;
   margin-left: 1.87rem;
   margin-right: 1.87rem;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #3169b8;
 }
 
 .button p {
@@ -206,4 +211,9 @@ li {
   text-align: center;
 
   padding: 0.8rem;
+}
+
+@media (max-width: 370px) {
+  body {
+  }
 }
