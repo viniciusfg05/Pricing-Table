@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+
+  --font: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  background-color: var(--page-background);
+}
+
+header {
+  height: 50%;
+  position: relative;
+  background-color: var(--blue);
+  width: 100%;
+  z-index: 0;
+}
+
+header h1 {
+  color: var(--page-background);
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 6.25rem auto 1.25rem auto;
+}
+
+.text {
+  height: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header p {
+  color: var(--page-background);
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 1.12rem;
+  width: 32rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* .planos {
+  height: 50%;
+  z-index: 99;
+} */
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.planos {
+  display: flex;
+  margin-top: -7rem;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.container {
+  /* padding: 3.625rem 2rem; */
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.215); /*colocar uma borda no card*/
+  border-bottom: 1rem solid var(--base-color);
+  border-radius: 0.5rem; /*borda redonda*/
+  z-index: 99;
+  background-color: var(--page-background);
+
+  width: 22.18rem;
+  height: 29.37rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.body.card {
+  padding: 0 1.87rem;
+}
+
+/* Header dos card --------------------------------------------------------------------------------------- */
+.classPlano {
+  background-color: #ffcc29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 4.75rem;
+  border-radius: 0.5rem; /*borda redonda*/
+}
+
+.classPlano h2 {
+  margin-left: 1.25rem;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 1.25rem;
+
+  color: rgba(29, 83, 158, 1);
+}
+
+.classPlano p {
+  background-color: var(--blue);
+  font-size: 0.75rem;
+  margin-right: 1.25rem;
+  font-family: var(--font);
+  border-radius: 0.9rem; /*borda redonda*/
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+
+  color: var(--page-background);
+  font-weight: 600;
+}
+
+/*  VALOR--------------------------------------------------------------------------------------- */
+
+.valor {
+  display: flex;
+  align-items: flex-end;
+}
+
+.valor span {
+  font-size: 1.25rem;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.valor .mes {
+  color: rgba(130, 135, 153, 1);
+  font-size: 1.12rem;
+  margin-bottom: 0.3rem;
+  margin-left: 0.2rem;
+
+  font-weight: 400;
+  font-family: var(--font);
+}
+
+.valor.plano {
+  display: flex;
+  font-size: 2.37rem;
+  font-weight: 700;
+  font-family: var(--font);
+  align-items: flex-end;
+}
+
+/*  Info--------------------------------------------------------------------------------------- */
+
+.info {
+  font-weight: 400;
+  font-family: var(--font);
+  font-size: 0.875rem;
+
+  color: rgba(130, 135, 153, 1);
+
+  margin-bottom: 2.56rem;
+}
+
+/*  Descriptios--------------------------------------------------------------------------------------- */
+
+li {
+  margin-bottom: 1.25rem;
+}
+
+.description {
+  font-weight: 600;
+  font-family: var(--font);
+  font-size: 1rem;
+
+  color: rgba(130, 135, 153, 1);
+}
+
+.icon-check {
+  color: #59ce9f;
+  margin-right: 0.9rem;
+}
+
+/*  BOTTON--------------------------------------------------------------------------------------- */
+
+.button {
+  background-color: var(--blue);
+  position: relative;
+  border-radius: 0.8rem; /*borda redonda*/
+  display: block;
+  margin-top: auto;
+  margin-bottom: 2.5rem;
+  margin-left: 1.87rem;
+  margin-right: 1.87rem;
+}
+
+.button p {
+  display: block;
+  font-weight: 600;
+  font-family: var(--font);
+  font-size: 1.25rem;
+  color: var(--page-background);
+  text-align: center;
+
+  padding: 0.8rem;
+}
