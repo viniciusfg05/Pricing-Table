@@ -95,7 +95,7 @@ header p {
 }
 
 /* Header dos card --------------------------------------------------------------------------------------- */
-.classPlano {
+.classPlano.destaque {
   background-color: #ffcc29;
   display: flex;
   align-items: center;
@@ -105,12 +105,31 @@ header p {
   border-radius: 0.5rem; /*borda redonda*/
 }
 
+.classPlano {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 4.75rem;
+  border-radius: 0.5rem; /*borda redonda*/
+}
+
+.classPlano.destaque h2,
 .classPlano h2 {
   margin-left: 1rem;
   font-family: var(--font);
   font-weight: 600;
   font-size: 1.1rem;
   color: rgba(29, 83, 158, 1);
+}
+
+.classPlano.destaque.button {
+  opacity: 0;
+}
+
+.classPlano.destaque.button.active {
+  opacity: 1;
 }
 
 .classPlano p {
@@ -186,7 +205,7 @@ li {
 
 /*  BOTTON--------------------------------------------------------------------------------------- */
 
-.button {
+.container .button {
   background-color: var(--blue);
   position: relative;
   border-radius: 0.8rem; /*borda redonda*/
@@ -206,14 +225,37 @@ li {
   display: block;
   font-weight: 600;
   font-family: var(--font);
-  font-size: 1.25rem;
   color: var(--page-background);
   text-align: center;
 
   padding: 0.8rem;
 }
 
-@media (max-width: 370px) {
-  body {
+@media (max-width: 700px) {
+  body,
+  html {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    margin: 5rem auto 0.2rem auto;
+  }
+
+  header p {
+    font-size: 0.8rem;
+    width: 18rem;
+  }
+  .planos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: auto;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
+
+  .container:nth-child(1) {
+    margin-left: 1.5rem;
   }
 }
